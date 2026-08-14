@@ -59,6 +59,12 @@ export default function Hero() {
             </a>
           </div>
         </FadeIn>
+
+        <FadeIn delay={350}>
+          <p className="text-sm text-foreground/60">
+            Sin costo y sin compromiso.
+          </p>
+        </FadeIn>
       </div>
     </section>
   );

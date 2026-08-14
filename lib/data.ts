@@ -11,13 +11,71 @@ export const whatsappUrl = `https://wa.me/${negocio.whatsapp}?text=${encodeURICo
   negocio.mensajeWhatsapp
 )}`;
 
+export const seo = {
+  titulo: `${negocio.nombre} | Entrenamiento personalizado en ${negocio.ubicacion}`,
+  descripcion:
+    "Gimnasio en casa con entrenamiento 100% personalizado en San Miguel, Santiago. Máximo 3 personas por bloque, rutina individual y seguimiento de progreso. Coordina tu clase de prueba, sin costo y sin compromiso.",
+};
+
 export const navLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#que-es", label: "¿Qué es?" },
+  { href: "#para-quien", label: "¿Para quién?" },
+  { href: "#proceso", label: "Proceso" },
   { href: "#planes", label: "Planes" },
   { href: "#incluye", label: "Qué incluye" },
   { href: "#horarios", label: "Horarios" },
   { href: "#contacto", label: "Contacto" },
+];
+
+export const perfiles = [
+  {
+    titulo: "Si el tiempo no te sobra",
+    descripcion:
+      "Entrenas cerca de tu casa, sin perder media hora en traslado ni tiempo muerto esperando que se desocupe una máquina.",
+  },
+  {
+    titulo: "Si los gimnasios grandes no son lo tuyo",
+    descripcion:
+      "Prefieres un grupo chico donde el profe sabe tu nombre y tu rutina, en vez de perderte entre desconocidos.",
+  },
+  {
+    titulo: "Si ya lo intentaste antes y no funcionó",
+    descripcion:
+      "Has entrenado antes pero sin seguimiento real, y terminaste abandonando. Acá revisamos tu progreso semana a semana para que no pase de nuevo.",
+  },
+  {
+    titulo: "Si es tu primera vez y te da un poco de vergüenza",
+    descripcion:
+      "No tienes que partir en un gimnasio lleno de gente mirando. Entrenas en un grupo de máximo 3 personas, a tu ritmo y sin apuro.",
+  },
+];
+
+export const proceso = [
+  {
+    paso: 1,
+    titulo: "Evaluación inicial",
+    descripcion:
+      "Conversamos sobre tus metas y hacemos un levantamiento de tu punto de partida.",
+  },
+  {
+    paso: 2,
+    titulo: "Plan personalizado",
+    descripcion:
+      "Diseñamos tu rutina individual, adaptada a tus objetivos y tu nivel actual.",
+  },
+  {
+    paso: 3,
+    titulo: "Sesiones en grupos chicos",
+    descripcion:
+      "Entrenas en bloques de máximo 3 personas, con atención personalizada 1:1.",
+  },
+  {
+    paso: 4,
+    titulo: "Seguimiento de progreso",
+    descripcion:
+      "Medimos tu avance con seguimiento de medidas corporales e historial de progreso, y ajustamos el plan.",
+  },
 ];
 
 export const planes = [
@@ -48,7 +106,7 @@ export const incluye = [
   "Rutina personalizada",
   "Seguimiento de medidas corporales",
   "Historial de progreso",
-  "Recordatorio de clases por WhatsApp o Gmail",
+  "Recordatorio automático de clases por Gmail",
   "Acceso a la plataforma web",
   "Atención personalizada 1:1",
 ];

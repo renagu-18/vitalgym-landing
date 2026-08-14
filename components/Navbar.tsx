@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { navLinks, negocio } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -31,12 +31,10 @@ export default function Navbar() {
         </ul>
 
         <a
-          href={negocio.urlApp}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contacto"
           className="hidden shrink-0 rounded-md bg-vg-red px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700 md:inline-block"
         >
-          Inscríbete
+          Contáctanos
         </a>
 
         <button
@@ -79,13 +77,11 @@ export default function Navbar() {
           ))}
           <li className="pt-2">
             <a
-              href={negocio.urlApp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contacto"
               className="block rounded-md bg-vg-red px-5 py-2 text-center text-sm font-semibold text-white"
               onClick={() => setMenuAbierto(false)}
             >
-              Inscríbete
+              Contáctanos
             </a>
           </li>
         </ul>

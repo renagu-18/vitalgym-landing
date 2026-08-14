@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
-import { negocio } from "@/lib/data";
+import { seo } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,15 +17,18 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vitalgym.cl"),
-  title: `${negocio.nombre} | Entrenamiento personalizado en ${negocio.ubicacion}`,
-  description:
-    "Gimnasio en casa con entrenamiento 100% personalizado en San Miguel, Santiago. Máximo 3 personas por bloque, rutina individual y seguimiento de progreso. Coordina tu clase de prueba por WhatsApp.",
+  metadataBase: new URL("https://vitalgym-webb.vercel.app"),
+  title: seo.titulo,
+  description: seo.descripcion,
   openGraph: {
-    title: `${negocio.nombre} | Entrenamiento personalizado`,
-    description:
-      "Gimnasio en casa con entrenamiento 100% personalizado en San Miguel, Santiago.",
+    title: seo.titulo,
+    description: seo.descripcion,
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: seo.titulo,
+    description: seo.descripcion,
   },
 };
 

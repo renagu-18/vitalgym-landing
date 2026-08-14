@@ -17,7 +17,8 @@ export default function ContactSection() {
         <FadeIn delay={100}>
           <p className="mt-4 text-lg text-foreground/80">
             Escríbenos por WhatsApp y te ayudamos a elegir el plan que mejor
-            se adapte a tus metas.
+            se adapte a tus metas. Sin costo y sin compromiso — es solo para
+            que conozcas cómo trabajamos.
           </p>
         </FadeIn>
 
