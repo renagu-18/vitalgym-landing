@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { seo } from "@/lib/data";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-MF20G10PRR";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,6 +45,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${oswald.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-vg-black text-foreground">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Navbar />
         <main className="flex-1">{children}</main>
         <WhatsAppFloatingButton />
