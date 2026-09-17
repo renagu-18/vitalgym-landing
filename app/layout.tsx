@@ -20,7 +20,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vitalgym-webb.vercel.app"),
+  metadataBase: new URL("https://www.vitalgym.cl"),
   title: seo.titulo,
   description: seo.descripcion,
   openGraph: {
