@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     title: seo.titulo,
     description: seo.descripcion,
   },
+  verification: {
+    google: "x8z7ghrPCdVjGuaF3iQ8mZDfYFLt9UJvveVppIVgk-s",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
