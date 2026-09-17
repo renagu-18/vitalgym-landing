@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <Image
         src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1920&q=80"
-        alt=""
+        alt="Entrenamiento personal en gimnasio VitalGym, San Miguel"
         fill
         priority
         sizes="100vw"
@@ -22,13 +22,14 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center gap-8">
         <FadeIn>
           <p className="font-heading text-sm font-semibold uppercase tracking-[0.3em] text-vg-red">
-            Entrenamiento personal en {negocio.ubicacion}
+            Vital<span className="text-foreground">Gym</span>
           </p>
         </FadeIn>
 
         <FadeIn delay={100}>
           <h1 className="font-heading text-5xl font-bold uppercase leading-tight tracking-tight sm:text-6xl md:text-7xl">
-            Vital<span className="text-vg-red">Gym</span>
+            Entrenamiento Personal en{" "}
+            <span className="text-vg-red">San Miguel</span>, Santiago
           </h1>
         </FadeIn>
 

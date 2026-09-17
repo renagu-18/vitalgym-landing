@@ -14,7 +14,7 @@ export const whatsappUrl = `https://wa.me/${negocio.whatsapp}?text=${encodeURICo
 export const seo = {
   titulo: `${negocio.nombre} | Entrenamiento personalizado en ${negocio.ubicacion}`,
   descripcion:
-    "Gimnasio en casa con entrenamiento 100% personalizado en San Miguel, Santiago. Máximo 3 personas por bloque, rutina individual y seguimiento de progreso. Coordina tu clase de prueba, sin costo y sin compromiso.",
+    "Gimnasio en casa en San Miguel: entrenamiento personalizado en grupos de máximo 3 personas. Agenda tu clase de prueba gratis, sin compromiso.",
 };
 
 export const navLinks = [
